@@ -26,10 +26,6 @@
 
    arry=[[NSMutableArray alloc]init];
    
-
-   
-    
-   
 }
 
 
@@ -79,23 +75,42 @@
         
        PRIME *prime=[[PRIME alloc]init];
         
-          [prime setnumbers1:startno sec:endno];
+        [prime setnumbers1:startno sec:endno];
         
-        [arry addObjectsFromArray:[prime primecal]];
-        
-        
-       
-        for(int i=0;i<arry.count;i++)
-        {
-            NSLog(@"count : @%d",i);
-                        
-        }
+        /*[arry addObjectsFromArray:[prime primecal]];
+         
+         
+         
+         for(int i=0;i<arry.count;i++)
+         {
+         NSLog(@"count : @%d",i);
+         
+         }
          for(count1 in arry)
          {
+         
+         NSLog(@" arry %@ ",count1);
+         
+         }*/
         
-            NSLog(@" arry %@ ",count1);
-
-        }
+        [prime primeCallWithCallBack:^(NSMutableArray *primeNumbers) {
+            [arry addObjectsFromArray:primeNumbers];
+            
+            for(int i=0;i<arry.count;i++)
+            {
+                NSLog(@"count : @%d",i);
+                
+            }
+            for(count1 in arry)
+            {
+                
+                NSLog(@" arry %@ ",count1);
+                
+            }
+            
+        }];
+        
+       
      }
             
     

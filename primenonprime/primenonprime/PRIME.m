@@ -46,5 +46,33 @@
 return  primearray;
 }
 
+- (void)primeCallWithCallBack:(void(^)(NSMutableArray* primeNumbers))finish
+{
+    NSMutableArray *primearray=[[NSMutableArray alloc]init];
+    for(i=start;i<=end;i++)
+    {
+        for(p=2;p<=i;)
+        {
+            remain=i%p;
+            if(remain==0)
+            {
+                break;
+            }
+            p++;
+        }
+        
+        if(p==i)
+        {
+            [primearray addObject:[NSString stringWithFormat:@"%d",i]];
+            count++;
+        }
+    }
+    
+    if(finish != nil)
+    {
+        finish(primearray);
+    }
+}
+
 @end
 

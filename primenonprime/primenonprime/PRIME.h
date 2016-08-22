@@ -24,5 +24,6 @@
 
 -(NSMutableArray *)primecal;
 
+- (void)primeCallWithCallBack:(void(^)(NSMutableArray* primeNumbers))finish;
 
 @end

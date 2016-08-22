@@ -220,7 +220,7 @@
 			name = primenonprimeTests;
 			productName = primenonprimeTests;
 			productReference = 100018D21D58632E0072B513 /* primenonprimeTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -228,7 +228,7 @@
 		100018A41D58632E0072B513 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = sunil;
 			};
 			buildConfigurationList = 100018A71D58632E0072B513 /* Build configuration list for PBXProject "primenonprime" */;
@@ -364,6 +364,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -412,6 +413,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "primenonprime/primenonprime-Prefix.pch";
 				INFOPLIST_FILE = "primenonprime/primenonprime-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "sunil.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -423,6 +425,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "primenonprime/primenonprime-Prefix.pch";
 				INFOPLIST_FILE = "primenonprime/primenonprime-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "sunil.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,6 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "primenonprime/primenonprime-Prefix.pch";
 				INFOPLIST_FILE = "primenonprimeTests/primenonprimeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "sunil.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -456,6 +460,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "primenonprime/primenonprime-Prefix.pch";
 				INFOPLIST_FILE = "primenonprimeTests/primenonprimeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "sunil.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

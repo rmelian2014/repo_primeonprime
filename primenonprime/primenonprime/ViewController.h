@@ -10,12 +10,8 @@
 
 @interface ViewController : UIViewController<UITextFieldDelegate,UIActionSheetDelegate,UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 {
-    
-    
     IBOutlet UITextField *txt1;
     IBOutlet UITextField *txt2;
-    
-    
     
     NSMutableArray *arry;
     
@@ -23,8 +19,6 @@
     int endno;
     
     NSString *count1;
-   
-    
 }
 
 @property IBOutlet UITableView *tbl;
